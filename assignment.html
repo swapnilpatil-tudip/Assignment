@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+#div1 {
+margin-top:50px;
+margin-left:300px;
+padding:30px;
+height:100px;
+width:500px;
+border-style:solid;
+border-width:5px;
+background-color:lightblue;
+}
+#div2 {
+margin-top:40px;
+margin-left:400px;
+padding:30px;
+height:200px;
+width:300px;
+border-style:dotted;
+border-width:5px;
+background-color:yellow;
+}
+#b1{
+padding:10px;
+background-color:green;
+margin-left:500px;
+font-size:20px;
+color:white;
+}
+#b2{
+padding:10px;
+background-color:green;
+margin-left:20px;
+font-size:20px;
+color:white;
+}
+#h11{
+margin-left:50px;
+}
+</style>
+
+<body>
+<form>
+<div id="div1">
+<h1 id="h11"><marquee>WELCOME TO TUDIP</marquee></h1><br></div>
+<div id="div2">
+<h2>USERNAME</h2>  <input type="text" id="user">
+<h2>PASSWORD</h2>  <input type="password" id="pass"><br>
+</div><br><br>
+<input type="submit" id="b1" value="submit" onclick="valid()">
+<input type="reset" id="b2" value="clear">
+</form>
+</body>
+<script type="text/javascript">
+
+function valid(){
+var a=document.getElementById("user").value;
+var b=document.getElementById("pass").value;
+if(a== "swapnil" && b == "patil"){
+alert("welcome");
+}
+else
+if(a== "" || b== "")
+alert("can not empty");
+else
+alert("wrong");
+
+}
+
+</script>
+</head>
+</html>
